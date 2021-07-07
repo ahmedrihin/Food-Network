@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body, input, button{
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --orange: rgb(253, 150, 82);
+    --white: #fff;
+    --dark: rgb(31, 31, 31);
+    --dark-pink: rgb(165, 52, 71);
+    --gray: rgb(82, 82, 82);
+    --light-gray: rgb(139, 139, 139);
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+.header{
+    padding: 1rem 0;
+    background-color: var(--dark);
+}
+section{
+    padding: 4rem 0;
+}
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-wrapper .logo a{
+    text-decoration: none;
+}
+.header-wrapper .logo h2{
+    color: rgb(184, 184, 184);
+    font-weight: 600;
+}
+.header-wrapper .logo h2 span{
+
+    background-image: linear-gradient(to right, #e48227, #af4261);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Nav bar design */
+
+.header-wrapper .nav-bar ul{
+    display: flex;
+}
+.header-wrapper .nav-bar ul li{
+    list-style: none;
+    margin-right: 1.5rem;
+}
+.header-wrapper .nav-bar ul li:last-child{
+    margin-right: 0;
+}
+.header-wrapper .nav-bar ul li a{
+    text-decoration: none;
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    transition: all 0.5s ease;
+}
+.header-wrapper .nav-bar ul li a:hover{
+    background-color: var(--dark-pink);
+    border-radius: 25px;
+}
+.header-wrapper .nav-bar ul li a.active{
+    background-color: var(--dark-pink);
+    border-radius: 25px;
+}
+
+/* Order-section */
+
+.order-wrapper{
+    display: flex;
+    align-items: center;
+}
+.order-wrapper .order-left{
+    margin-right: 2rem;
+}
+.order-wrapper .order-left h2{
+    font-size: 3rem;
+    color: var(--gray);
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.order-wrapper .order-left h2 span{
+    color: var(--orange);
+}
+.order-wrapper .order-left p{
+    color: var(--light-gray);
+    margin-bottom: 2rem;
+}
+.btn{
+    font-size: 1rem;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    padding: 0.8rem 1.4rem;
+    font-weight: 500;
+    background-image: linear-gradient(to right, #e48227, #af4261);
+    color: var(--white);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.btn:hover{
+    box-shadow: 0px 0px 4px 4px #d46155;
+}
+.order-wrapper .order-right img{
+    height: 600px;
+}
+
+/* About Section design */
+
+#about{
+    background-image: url('../images/shapes/7.png');
+}
+.about-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-wrapper .about-left{
+    margin-right: 10rem;
+}
+.about-wrapper .about-left img{
+    height: 500px;
+}
+.about-wrapper .about-right{
+    width: 50%;
+}
+.about-wrapper .about-right h2{
+    font-size: 2rem;
+    color: var(--gray);
+    margin-bottom: 2rem;
+}
+.about-wrapper .about-right p{
+    margin-bottom: 5rem;
+}
+
+/* Recipie section design */
+
+.recipie-heading{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.recipie-heading h2{
+    font-size: 2rem;
+    color: var(--gray);
+    margin-bottom: 2rem;
+}
+.recipie-heading p{
+    padding: 0 15rem;
+}
+
+.recipie-card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 5rem;
+}
+.recipie-card-wrapper .card{
+    background-color: #f2f2f2;
+    padding: 1rem;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px 4px #d2d2d2;
+}
+.recipie-card-wrapper .card .card-top-image{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.recipie-card-wrapper .card .card-top-image img{
+    height: 200px;
+}
+.recipie-card-wrapper .card .card-bottom-content h3{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+.recipie-card-wrapper .card .card-bottom-content p{
+    line-height: 30px;
+    font-size: 0.9rem;
+    color: var(--dark);
+}
+
+/* Follower design */
+
+.follow-wrapper{
+    display: flex;
+    justify-content: space-around;
+    background-color: #e4e4e4;
+    padding: 3rem 2rem;
+}
+.follow-wrapper h3{
+    font-size: 2.5rem;
+}
+.follow-wrapper p{
+    font-size: 0.9rem;
+    color: var(--dark);
+}
+
+/* Footer design */
+
+.footer{
+    text-align: center;
+    background-color: var(--dark);
+    padding: 2rem 0 4rem 0;
+}
+.footer h2{
+    color: rgb(184, 184, 184);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.footer p{
+    color: #d1d1d1;
+    font-size: 0.9rem;
+}
+.footer h2 span{
+    background-image: linear-gradient(to right, #e48227, #af4261);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
